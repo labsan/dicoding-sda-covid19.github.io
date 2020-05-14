@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="./assets/images/sidoarjokab_logo.png" type="image/x-icon" />
+		<title>Situs Informasi Covid-19 Daerah Kabupaten Sidoarjo</title>
+		<link rel="stylesheet" href="./assets/css/style.css" />
+	</head>
+
+	<body>
+		<!-- Navbar -->
+		<header>
+			<div class="flex-header">
+				<div class="box-logo">
+					<img class="logo" src="./assets/images/sidoarjokab_logo.png" alt="Logo Kab. Sidoarjo" />
+					<div class="slogan">
+						<h1 class="text-sda">Kabupaten Sidoarjo</h1>
+						<p>
+							<i>Sidoarjo Permai, Bersih Hatinya</i>
+						</p>
+					</div>
+				</div>
+				<div class="nav">
+					<ul>
+						<li><a href="#ringkasan-covid-19">Kasus</a></li>
+						<li><a href="#gejala-covid-19">Gejala</a></li>
+						<li><a href="#info-detail-covid-19">Rincian</a></li>
+						<li><a href="#tabel-covid-19">Sebaran</a></li>
+						<li><a href="#rs-rujukan">Rujukan</a></li>
+						<li><a href="#call-center">Call Center</a></li>
+					</ul>
+				</div>
+
+				<!-- This tag failure if you make navbar with Flexbox -->
+				<!-- <nav>
+					<ul>
+						<li><a href="#ringkasan-covid-19">Kasus Covid-19</a></li>
+						<li><a href="#gejala-covid-19">Gejala Covid-19</a></li>
+						<li><a href="#info-detail-covid-19">Rincian Covid-19</a></li>
+						<li><a href="#tabel-covid-19">Sebaran Covid-19</a></li>
+						<li><a href="#rs-rujukan">Rujukan</a></li>
+						<li><a href="#call-center">Call Center</a></li>
+					</ul>
+				</nav> -->
+
+			</div>
+			
+		</header>
+
+		<div class="flex-container">
+			<!-- Content -->
+			<main>
+				<article>
+					<figure>
+						<img class="banner" src="./assets/images/banner.jpg" alt="Gambar Banner" />
+					</figure>
+				</article>
+
+				<!-- Ringkasan Kasus Covid-19 -->
+				<article id="ringkasan-covid-19" class="flex-article">
+					<div class="judul-artikel">
+						<h3>
+							Informasi Ringkas Kasus Covid-19 hari ini [update: <span class="tanggal_update">11 Mei 2020</span> ] 
+							<button id="btn-update">Update</button>
+						</h3>
+					</div>
+					<div class="flex-box">
+						<div class="box-small bg-color-merah">
+							<p class="jml-kasus" id="positif">188</p>
+							<p class="ket-kasus">Positif</p>
+						</div>
+						<div class="box-small bg-color-hijau">
+							<p class="jml-kasus" id="sembuh">14</p>
+							<p class="ket-kasus">Sembuh</p>
+						</div>
+						<div class="box-small bg-color-abuabu">
+							<p class="jml-kasus" id="meninggal">20</p>
+							<p class="ket-kasus">Meninggal</p>
+						</div>
+						<div class="box-small bg-color-biru">
+							<p class="jml-kasus" id="odp">893</p>
+							<p class="ket-kasus">Orang Dalam Pemantauan (ODP)</p>
+						</div>
+						<div class="box-small bg-color-orange">
+							<p class="jml-kasus" id="pdp">238</p>
+							<p class="ket-kasus">Pasien Dalam Pengawasan (PDP)</p>
+						</div>
+					</div>
+					<div class="sumber">
+						<p>Sumber: (https://www.instagram.com/dinkes_sidoarjo)</p>
+					</div>
+				</article>
+
+				<!-- Kenali Gejala Covid-19 -->
+				<article id="gejala-covid-19" class="flex-article">
+					<div class="judul-artikel">
+						<h3>Kenali Gejala Covid-19</h3>
+					</div>
+					<div class="flex-box">
+						<div class="box-medium bg-color-silver">
+							<p class="nama-gejala">Demam</p>
+							<img class="gambar-gejala" src="./assets/images/demam.png" alt="gejala demam" />
+							<p class="ket-gejala">
+								Demam menunjukkan gejala awal munculnya virus Covid-19, biasanya suhu demam mencapai 38
+								derajat celcius keatas
+							</p>
+						</div>
+						<div class="box-medium bg-color-silver">
+							<p class="nama-gejala">Batuk Kering</p>
+							<img class="gambar-gejala" src="./assets/images/batuk.png" alt="gejala batuk kering" />
+							<p class="ket-gejala">
+								Batuk kering tidak beriak dan berulang-ulang merupakan tanda infeksi aktif pada
+								paru-paru, yang memungkinkan disebabkan oleh virus Covid-19
+							</p>
+						</div>
+						<div class="box-medium bg-color-silver">
+							<p class="nama-gejala">Sakit Tenggorokan</p>
+							<img
+								class="gambar-gejala"
+								src="./assets/images/sakit_tenggorokan.png"
+								alt="gejala sakit tenggorokan"
+							/>
+							<p class="ket-gejala">
+								Infeksi virus Covid-19 akan melalui jalur pernafasan sehingga dapat mengakibatkan radang
+								padat tenggorokan serta timbul rasa nyeri
+							</p>
+						</div>
+						<div class="box-medium bg-color-silver">
+							<p class="nama-gejala">Sakit Kepala</p>
+							<img class="gambar-gejala" src="./assets/images/pusing.png" alt="gejala sakit kepala" />
+							<p class="ket-gejala">
+								Dengan adanya demam tinggi, virus Covid-19 seringkali diikuti dengan gejala sakit kepala
+							</p>
+						</div>
+						<div class="box-medium bg-color-silver">
+							<p class="nama-gejala">Lemas</p>
+							<img class="gambar-gejala" src="./assets/images/lemas.png" alt="gejala lemas" />
+							<p class="ket-gejala">
+								Infeksi terhadap virus Covid-19 yang telah menyebar ke seluruh tubuh akan menghabiskan
+								energi yang banyak sehingga seringkali dapat mengakibatkan lemas
+							</p>
+						</div>
+						<div class="box-medium bg-color-silver">
+							<p class="nama-gejala">Sesak Nafas</p>
+							<img class="gambar-gejala" src="./assets/images/batuk.png" alt="gejala sesak nafas" />
+							<p class="ket-gejala">
+								Apabila virus Covid-19 berkembang dengan cepat dan besar di paru-paru, fungsi paru-paru
+								akan menurun sehingga terjadinya sesak nafas
+							</p>
+						</div>
+					</div>
+					<div class="sumber">
+						<p>Sumber: (hhttp://checkupcovid19.jatimprov.go.id)</p>
+					</div>
+				</article>
+
+				<!-- Rincian Informasi Kasus Covid-19 -->
+				<article id="info-detail-covid-19" class="flex-article">
+					<div class="judul-artikel">
+						<h3>Rincian Informasi Kasus Covid-19 hari ini [update: 11 Mei 2020]</h3>
+					</div>
+					<div class="flex-box">
+						<div class="box-large bg-color-merah">
+							<p class="jml-kasus">188</p>
+							<p class="ket-kasus">Positif Covid-19</p>
+						</div>
+						<div class="box-small bg-color-hijau">
+							<p class="jml-kasus">14</p>
+							<p class="ket-kasus">Positif Covid-19<br />Sembuh</p>
+						</div>
+						<div class="box-small bg-color-abuabu">
+							<p class="jml-kasus">20</p>
+							<p class="ket-kasus">Positif Covid-19<br />Meninggal</p>
+						</div>
+						<div class="box-large bg-color-orange">
+							<p class="jml-kasus">238</p>
+							<p class="ket-kasus">Pasien Dalam Pengawasan (PDP)</p>
+						</div>
+						<div class="box-small bg-color-hijau">
+							<p class="jml-kasus">25</p>
+							<p class="ket-kasus">(PDP) Sembuh</p>
+						</div>
+						<div class="box-small bg-color-abuabu">
+							<p class="jml-kasus">22</p>
+							<p class="ket-kasus">(PDP) Meninggal</p>
+						</div>
+						<div class="box-medium bg-color-biru">
+							<p class="jml-kasus">893</p>
+							<p class="ket-kasus">Orang Dalam Pemantauan (ODP)</p>
+						</div>
+						<div class="box-medium bg-color-hijau">
+							<p class="jml-kasus">670</p>
+							<p class="ket-kasus">(ODP)<br />Sembuh</p>
+						</div>
+					</div>
+					<div class="sumber">
+						<p>Sumber: (https://www.instagram.com/dinkes_sidoarjo)</p>
+					</div>
+				</article>
+
+				<!-- Tabel Sebaran Covid-19 -->
+				<article id="tabel-covid-19">
+					<div class="judul-artikel">
+						<h3>Tabel Sebaran Kasus Covid-19</h3>
+					</div>
+					<div class="flex-box">
+						<div class="box-large bg-color-silver">
+							<table>
+								<caption>
+									Data Kasus per Kecamatan [update: 11 Mei 2020]
+								</caption>
+								<thead>
+									<tr>
+										<th scope="col">Kecamatan</th>
+										<th scope="col">ODP</th>
+										<th scope="col">PDP</th>
+										<th scope="col">Positif</th>
+										<th scope="col">Meninggal</th>
+										<th scope="col">Sembuh</th>
+									</tr>
+									<tbody>
+										<tr>
+											<td scope="row" data-label="Kecamatan">Tarik</td>
+											<td data-label="ODP">22</td>
+											<td data-label="PDP">2</td>
+											<td data-label="Positif">1</td>
+											<td data-label="Meninggal">0</td>
+											<td data-label="Sembuh">0</td>
+										</tr>
+										<tr>
+											<td scope="row" data-label="Kecamatan">Prambon</td>
+											<td data-label="ODP">10</td>
+											<td data-label="PDP">4</td>
+											<td data-label="Positif">2</td>
+											<td data-label="Meninggal">1</td>
+											<td data-label="Sembuh">0</td>
+										</tr>
+										<tr>
+											<td scope="row" data-label="Kecamatan">Krembung</td>
+											<td data-label="ODP">14</td>
+											<td data-label="PDP">0</td>
+											<td data-label="Positif">0</td>
+											<td data-label="Meninggal">0</td>
+											<td data-label="Sembuh">0</td>
+										</tr>
+										<tr>
+											<td scope="row" data-label="Kecamatan">Porong</td>
+											<td data-label="ODP">8</td>
+											<td data-label="PDP">5</td>
+											<td data-label="Positif">0</td>
+											<td data-label="Meninggal">0</td>
+											<td data-label="Sembuh">0</td>
+										</tr>
+										<tr>
+											<td scope="row" data-label="Kecamatan">Jabon</td>
+											<td data-label="ODP">27</td>
+											<td data-label="PDP">4</td>
+											<td data-label="Positif">0</td>
+											<td data-label="Meninggal">0</td>
+											<td data-label="Sembuh">0</td>
+										</tr>
+										<tr>
+											<td scope="row" data-label="Kecamatan">Tanggulangin</td>
+											<td data-label="ODP">12</td>
+											<td data-label="PDP">5</td>
+											<td data-label="Positif">4</td>
+											<td data-label="Meninggal">0</td>
+											<td data-label="Sembuh">1</td>
+										</tr>
+										<tr>
+											<td scope="row" data-label="Kecamatan">Candi</td>
+											<td data-label="ODP">25</td>
+											<td data-label="PDP">17</td>
+											<td data-label="Positif">21</td>
+											<td data-label="Meninggal">4</td>
+											<td data-label="Sembuh">3</td>
+										</tr>
+										<tr>
+											<td scope="row" data-label="Kecamatan">Sidoarjo</td>
+											<td data-label="ODP">279</td>
+											<td data-label="PDP">30</td>
+											<td data-label="Positif">30</td>
+											<td data-label="Meninggal">1</td>
+											<td data-label="Sembuh">6</td>
+										</tr>
+										<tr>
+											<td scope="row" data-label="Kecamatan">Tulangan</td>
+											<td data-label="ODP">28</td>
+											<td data-label="PDP">11</td>
+											<td data-label="Positif">4</td>
+											<td data-label="Meninggal">0</td>
+											<td data-label="Sembuh">0</tdd>
+										</tr>
+										<tr>
+											<td scope="row" data-label="Kecamatan">Wonoayu</td>
+											<td data-label="ODP">21</td>
+											<td data-label="PDP">9</td>
+											<td data-label="Positif">3</td>
+											<td data-label="Meninggal">0</td>
+											<td data-label="Sembuh">1</td>
+										</tr>
+										<tr>
+											<td scope="row" data-label="Kecamatan">Krian</td>
+											<td data-label="ODP">38</td>
+											<td data-label="PDP">7</td>
+											<td data-label="Positif">11</td>
+											<td data-label="Meninggal">1</td>
+											<td data-label="Sembuh">0</td>
+										</tr>
+										<tr>
+											<td scope="row" data-label="Kecamatan">Balongbendo</td>
+											<td data-label="ODP">21</td>
+											<td data-label="PDP">5</td>
+											<td data-label="Positif">2</td>
+											<td data-label="Meninggal">0</td>
+											<td data-label="Sembuh">0</td>
+										</tr>
+										<tr>
+											<td scope="row" data-label="Kecamatan">Taman</td>
+											<td data-label="ODP">44</td>
+											<td data-label="PDP">38</td>
+											<td data-label="Positif">27</td>
+											<td data-label="Meninggal">0</td>
+											<td data-label="Sembuh">1</td>
+										</tr>
+										<tr>
+											<td scope="row" data-label="Kecamatan">Sukodono</td>
+											<td data-label="ODP">32</td>
+											<td data-label="PDP">16</td>
+											<td data-label="Positif">10</td>
+											<td data-label="Meninggal">3</td>
+											<td data-label="Sembuh">0</td>
+										</tr>
+										<tr>
+											<td scope="row" data-label="Kecamatan">Buduran</td>
+											<td data-label="ODP">106</td>
+											<td data-label="PDP">8</td>
+											<td data-label="Positif">10</td>
+											<td data-label="Meninggal">1</td>
+											<td data-label="Sembuh">1</td>
+										</tr>
+										<tr>
+											<td scope="row" data-label="Kecamatan">Gedangan</td>
+											<td data-label="ODP">52</td>
+											<td data-label="PDP">15</td>
+											<td data-label="Positif">9</td>
+											<td data-label="Meninggal">1</td>
+											<td data-label="Sembuh">0</td>
+										</tr>
+										<tr>
+											<td scope="row" data-label="Kecamatan">Sedati</td>
+											<td data-label="ODP">19</td>
+											<td data-label="PDP">4</td>
+											<td data-label="Positif">10</td>
+											<td data-label="Meninggal">1</td>
+											<td data-label="Sembuh">0</td>
+										</tr>
+										<tr>
+											<td scope="row" data-label="Kecamatan">Waru</td>
+											<td data-label="ODP">52</td>
+											<td data-label="PDP">47</td>
+											<td data-label="Positif">44</td>
+											<td data-label="Meninggal">7</td>
+											<td data-label="Sembuh">1</td>
+										</tr>
+									</tbody>
+								</thead>
+							</table>
+						</div>
+					</div>
+					<div class="sumber">
+						<p>Sumber: (https://covid19.sidoarjokab.go.id)</p>
+					</div>
+				</article>
+
+				<!-- Rumah Sakit Rujukan -->
+				<article id="rs-rujukan" class="flex-article">
+					<div class="judul-artikel">
+						<h3>Rumah Sakit Rujukan</h3>
+					</div>
+					<div class="flex-box">
+						<div class="box-large bg-color-silver">
+							<img class="gambar-rs" src="./assets/images/rsud-sidoarjo.jpg" alt="gambar rsud sidoarjo" />
+							<p class="nama-rs">RSUD Sidoarjo</p>
+						</div>
+						<div class="box-large bg-color-silver">
+							<img
+								class="gambar-rs"
+								src="./assets/images/rsi-sitihajar-sidoarjo.JPG"
+								alt="gambar rsi siti hajar sidoarjo"
+							/>
+							<p class="nama-rs">RSI Siti Hajar Sidoarjo</p>
+						</div>
+						<div class="box-large bg-color-silver">
+							<img
+								class="gambar-rs"
+								src="./assets/images/rsu-mitra-keluarga-sidoarjo.jpg"
+								alt="gambar rsu mitra keluarga sidoarjo"
+							/>
+							<p class="nama-rs">RSU Mitra Keluarga Waru Sidoarjo</p>
+						</div>
+						<div class="box-large bg-color-silver">
+							<img
+								class="gambar-rs"
+								src="./assets/images/rsu-anwar-medika-sidoarjo.jpg"
+								alt="gambar rs anwar medika krian"
+							/>
+							<p class="nama-rs">RSU Anwar Medika</p>
+						</div>
+					</div>
+					<div class="sumber">
+						<p>Sumber: (https://covid19.sidoarjokab.go.id)</p>
+					</div>
+				</article>
+
+				<!-- Layanan Penanganan Covid-19 -->
+				<article id="call-center" class="flex-article">
+					<div class="judul-artikel">
+						<h3>Informasi Layanan Penanganan Covid-19</h3>
+					</div>
+					<div class="flex-box">
+						<div class="box-medium bg-color-merah">
+							<p class="nama-layanan">Layanan Darurat</p>
+							<p class="kontak-layanan">119</p>
+						</div>
+						<div class="box-medium bg-color-biru">
+							<p class="nama-layanan">DINKES</p>
+							<p class="kontak-layanan">(031) 8941051</p>
+						</div>
+						<div class="box-medium bg-color-orange">
+							<p class="nama-layanan">BPBD</p>
+							<p class="kontak-layanan">(031) 8953200</p>
+						</div>
+						<div class="box-medium bg-color-hijau">
+							<p class="nama-layanan">RSUD Sidoarjo</p>
+							<p class="kontak-layanan">(031) 8961649</p>
+						</div>
+					</div>
+					<div class="sumber">
+						<p>Sumber: (https://covid19.sidoarjokab.go.id)</p>
+					</div>
+				</article>
+			</main>
+
+			<!-- Sidebar -->
+			<aside>
+				<div class="box-profile">
+					<figure class="fig-profile">
+						<img class="photo-profile" src="./assets/images/photo_profile.jpg" alt="photo profile" />
+						<figcaption class="figcap-profile">
+							<h2>Andrian Santiyon</h2>
+							<h3>Kabupaten Sidoarjo</h3>
+							<h3>Jawa Timur</h3>
+						</figcaption>
+					</figure>
+				</div>
+
+				<!-- box-setting -->
+				<!-- <div class="box-setting">
+					<figure class="fig-profile">
+						
+						<figcaption class="figcap-profile">
+							<h2>Update! box-setting</h2>
+							<h3>Kabupaten Sidoarjo</h3>
+							<h3>Jawa Timur</h3>
+						</figcaption>
+					</figure>
+				</div> -->
+			</aside>
+		</div>
+
+		<!-- Foobar -->
+		<footer>
+			<p>Copyright © 2020 All Rights Reserved | <span>Labsan</span></p>
+		</footer>
+
+		<script src="./assets/js/script.js"></script>
+	</body>
+</html>
