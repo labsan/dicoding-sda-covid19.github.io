@@ -1,10 +1,9 @@
-# p0-sda-covid19.github.io
-Initial Project in my World! Welcome to my Project ^^
+# dicoding-sda-covid19.github.io
 ---
  - Pure Native HTML & CSS
  - Design Web Layout with Flexbox, such as :
     - Navbar
     - Content (Main Content & Asidebar)
- - You can see result this project: https://labsan.github.io/p0-sda-covid19.github.io/
+ - Demo hasil belajar: https://labsan.github.io/dicoding-sda-covid19.github.io/
 ---
     
