@@ -15,5 +15,6 @@
        - Header
        - Item Content pada tiap artikelnya (card)
        - Asidebar
+    - Menambahkan sedikit Javascript pada button 'update'
     
  
